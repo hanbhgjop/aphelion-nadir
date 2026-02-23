@@ -1,93 +1,114 @@
-# 🛠️ Fusion 360 Customization Pack
+# 1. 퓨전 기본 단축키 활용하기
+Tab, s, 화살표키, '(작은따옴표)는 이미 퓨전에서 고정된 단축키이기에, 따로 지정할 수 없다. 
+![](images/Pasted%20image%2020260223202531.png)
+![](images/Pasted%20image%2020260223202501.png)
+이런식으로 단축키를 지정할 수 있다.
+지정된 단축키를 한눈에 볼수 있는 기능은 퓨전에 기본적으로 없다. 
+단축키를 잘 지정하면 작업 속도와 능률을 높일 수 있다.
 
-개인적으로 Fusion 360 작업 효율을 높이기 위해 추가한 커스터마이징 모음입니다.  
-누구나 쉽게 적용할 수 있도록 정리했습니다.
+```
+SPACE 
+'(백틱) 브라우저 트리 보이기 / 숨기기 
+SHIFT + '(백틱) 뷰큐브 보이기 / 숨기기
+Q 스케치 마무리 / 밀고당기기
+W 스케치
+SHIFT + W 현재 편집중인 스케치를 보도록 회전
+E 돌출 
+R 직사각형
+T 트림(자르기)
+SHIFT + T 연장
+Y 
+U
+I 
+O offset face(면 간격 띄우기)
+P 형상투영
+SHIFT + P 파라미터(매개변수 관리)
+A 색상 및 재질
+S 툴박스(바로가기)
+SHIFT + S 애드인 및 스크립트
+D 치수
+F 필렛(모깎기)
+SHIFT + F 스케치 필렛
+G 챔버(모따기)
+H 구속
+J 접합(조인트)
+SHIFT + J 현재 위치에 접합
+K 
+L 선
+SHIFT + L 3점 곡선(호)
+Z 위치 캡쳐
+SHIFT + Z 위치 되돌리기
+X 컴포넌트 활성화
+SHIFT + X 최상위 선택 (애드인)
+C 원
+SHIFT + C 접선
+V 뷰에서 선택한 컴포넌트 보이기 / 숨기기
+SHIFT + V 브라우저에서 선택한 컴포넌트 보이기 / 숨기기
+B 고정 / 고정해제
+N 새 구성요소(컴포넌트)
+SHIFT + N 무작위 색상 표시
+M  이동
+, 회전 중심 설정
+SHIFT+ , 회전 중심 재설정
+. 점
+SHIFT꾹 가까운 정점 표시
+1 창 선택
+2 자유형 선택
+3 페인트 선택
+4
+5
+6
+7
+8
+9
+0
+-(마이너스) 고정
+= 고정해제
+CTRL + 1 본체 우선순위 선택
+CTRL + 2 면 우선순위 선택
+CTRL + 3 모서리 우선순위 선택
+F2 이름 바꾸기
+F5 정면(뷰큐브 켜져있을 시에만)
+F6 전체로 보이는 뷰
+F11 전체화면
+CTRL + Alt + N 탐색 막대 보이기/숨기기
+CTRL + Z 명령취소
+CTRL + Y 명령복구
+Ctrl + S 저장
+Alt + 왼 이전 타임라인
+Alt + 오 이후 타임라인
+Alt + 위 처음 타임라인
+Alt + 아래 마지막 타임라인
+휠클릭 이동
+우클릭 회전
+휠클릭2번 뷰꽉채워보기
+[ 
+]
+;
+/
+*
+```
 
----
 
-## 📦 포함된 내용
+필자가 쓰고있는 단축키 목록이다.
+![](images/Pasted%20image%2020260223203220.png)
+필자의 기본 설정이다(우상단 프로필 > 기본 설정).
 
-### 1. 기본 단축키 설정 (Fusion 360 내장 기능)
-Fusion 360에 이미 있지만 단축키가 없던 기능들에 단축키를 할당했습니다.
+# 2. AnyShortcut 단축키 플러그인
+[여기](https://apps.autodesk.com/FUSION/ko/Detail/Index?id=156700835167123223&appLang=en&os=Win64)서 다운받을 수 있다. 
+스크립트 및 애드인(Shift + S) 에서 실행해준다.
+![](images/Pasted%20image%2020260223203522.png)
+퓨전에 있는 기본 단축키보다 더 많은 키를 쓸 수 있게 해준다.
+유틸리티 > AnyShortcut 
+![](images/Pasted%20image%2020260223203637.png)
+Built-in Commands 는 이 애드인으로 새로 쓸수 있게 된 기능들이다. 
+다른 기능들과 마찬가지로 단축키를 지정할 수 있다.
+녹화 버튼을 누른 후 퓨전에 있는 기능을 사용하고 정지 버튼을 누르면 사용한 기능이 Command Recorder에 기록된다. 기록된 기능에 단축키를 지정할 수 있다.
 
-| 단축키 | 기능 |
-|--------|------|
-| `X` | 활성 컴포넌트 전환 (Activate Component) |
-| `Alt + C` | 컴포넌트 생성 (Create Component) |
-| *(그 외 본인 취향에 맞게 추가)* | |
-
-> Fusion 360 상단 메뉴 → **파일 > 환경설정 > 단축키**에서 직접 설정합니다.
-
----
-
-### 2. AnyShortcut 플러그인
-Fusion 360에서 기본 API로는 단축키 등록이 안 되는 기능들을 지원하는 서드파티 플러그인입니다.
-
-- **다운로드**: [AnyShortcut 공식 사이트](https://anyshortcut.app) 또는 검색
-- **설치 방법**:
-  1. `AnyShortcut_win64.msi` 실행
-  2. 설치 후 Fusion 360 재시작
-  3. 상단 메뉴에 AnyShortcut 탭 생성됨
-  4. 원하는 커맨드에 단축키 할당
-
----
-
-### 3. 커스텀 Add-Ins (직접 제작)
-
-Fusion 360 API로 만든 애드인들입니다. `AddIns/` 폴더에 있습니다.
-
-#### 📁 AddIns 목록
-
-| 애드인 | 단축키 | 기능 |
-|--------|--------|------|
-| `ToggleComponentVisibility` | `V` | 선택한 본체의 **상위 컴포넌트 전체**를 숨기기/보이기 토글 |
-| `SelectActiveComponent` | `Ctrl+Shift+A` | 현재 활성화된 컴포넌트를 브라우저에서 선택 |
-| `ActivateRootShortCut` | `Shift+X` | 최상위(Root) 컴포넌트 선택 (이후 `X`로 활성화) |
-| `BrowserNavigateShortcut` | `Ctrl+Shift+N` | 브라우저에서 스케치 폴더까지 자동 탐색 (→↓↓↓→) |
-| `ExpandSketchesShortcut` | `Ctrl+Shift+S` | 현재 컴포넌트의 Sketches 폴더를 브라우저에서 확장 |
-
----
-
-## 🚀 Add-Ins 설치 방법
-
-### 방법 1: 폴더 복사 (권장)
-
-1. 이 저장소를 클론하거나 ZIP으로 다운로드
-   ```
-   git clone https://github.com/hanbhgjop/aphelion-nadir.git
-   ```
-
-2. `AddIns` 폴더 안의 원하는 애드인 폴더를 아래 경로에 복사:
-   ```
-   C:\Users\[사용자명]\AppData\Roaming\Autodesk\Autodesk Fusion 360\API\AddIns\
-   ```
-
-3. Fusion 360 실행 → **도구 탭 > 추가 기능 > 스크립트 및 추가 기능**
-
-4. 해당 애드인을 찾아서 **실행** 또는 **자동 실행** 체크
-
-### 방법 2: Fusion 360 내에서 직접 로드
-
-1. Fusion 360 상단 메뉴 → **도구 > 추가 기능 > 스크립트 및 추가 기능**
-2. **내 스크립트** 탭 → 오른쪽 `+` 버튼 → 애드인 폴더 선택
-3. 실행 버튼 클릭
-
----
-
-## ⚠️ 주의사항
-
-- 단축키 충돌 시 Fusion 360 환경설정에서 기존 단축키를 해제한 후 사용하세요.
-- `ToggleComponentVisibility`의 `V` 단축키는 기존 Body 숨기기 단축키를 **대체**합니다.
-- 애드인은 Fusion 360 업데이트 후 재실행이 필요할 수 있습니다.
-
----
-
-## 🔧 개발 환경
-
-- Fusion 360 (최신 버전)
-- Python 3.x (Fusion 360 내장)
-- Windows 10/11
-
----
-
-*Made with ❤️ to speed up Fusion 360 workflows*
+# 3. 추가 애드인
+1. **ToggleComponentVisibility** 
+선택한 본체의 **상위 컴포넌트 전체** 숨기기/보이기 애드인
+: 뷰에서 컴포넌트를 선택한 후 V를 눌렀을 때 컴포넌트가 아니라 본체가 숨겨지는 불편함을 해결해주는 애드인입니다. 브라우저에서 선택한 경우 Shift + V로 숨기거나 보이게 할 수 있습니다.
+2. **ActivateRootShortCut**
+뷰에서 선택한 컴포넌트를 활성화 하게 해주는 애드인
+X로 활성화 할 수 있고, Shift + X로 최상위 컴포넌트를 선택한 후 X로 활성화 할 수도 있습니다.
