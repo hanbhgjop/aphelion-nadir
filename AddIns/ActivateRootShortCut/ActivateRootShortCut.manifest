@@ -1,0 +1,13 @@
+{
+    "autodeskProduct": "Fusion360",
+    "type": "addin",
+    "id": "ActivateRootShortCut",
+    "author": "User",
+    "description": {
+        "": "최상위 컴포넌트를 Shift+X 단축키로 활성화합니다."
+    },
+    "version": "1.0.0",
+    "runOnStartup": true,
+    "supportedOS": "windows|mac",
+    "editEnabled": true
+}
