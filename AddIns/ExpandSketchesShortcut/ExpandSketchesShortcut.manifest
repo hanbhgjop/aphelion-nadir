@@ -1,0 +1,13 @@
+{
+    "autodeskProduct": "Fusion360",
+    "type": "addin",
+    "id": "ExpandSketchesShortcut",
+    "author": "User",
+    "description": {
+        "": "현재 컴포넌트의 Sketches 폴더를 확장합니다."
+    },
+    "version": "1.0.0",
+    "runOnStartup": true,
+    "supportedOS": "windows|mac",
+    "editEnabled": true
+}

@@ -1,0 +1,13 @@
+{
+    "autodeskProduct": "Fusion360",
+    "type": "addin",
+    "id": "SelectActiveComponent",
+    "author": "User",
+    "description": {
+        "": "현재 활성화된 컴포넌트를 브라우저에서 선택합니다."
+    },
+    "version": "1.0.0",
+    "runOnStartup": true,
+    "supportedOS": "windows|mac",
+    "editEnabled": true
+}
